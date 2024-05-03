@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_media_pdf_embeds",
+  "info": {
+    "displayName": "PDF embed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PDF": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Caption": {
+      "type": "string"
+    }
+  }
+}

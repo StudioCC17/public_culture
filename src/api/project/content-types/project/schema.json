@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projects",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "writing",
+        "research",
+        "curation",
+        "creation",
+        "teaching"
+      ]
+    },
+    "Format": {
+      "type": "enumeration",
+      "enum": [
+        "programme",
+        "publication",
+        "project",
+        "pedagogy",
+        "audio-visual"
+      ]
+    },
+    "Connections": {
+      "type": "dynamiczone",
+      "components": [
+        "connections.leads-to",
+        "connections.part-of"
+      ]
+    },
+    "Meta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta.item"
+    },
+    "subInfo": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "media.image",
+        "media.video",
+        "media.sound-embed",
+        "media.pdf-embed",
+        "text.text-block",
+        "media.image-gallery"
+      ]
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

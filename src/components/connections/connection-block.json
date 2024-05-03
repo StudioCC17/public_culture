@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_connections_connection_blocks",
+  "info": {
+    "displayName": "Connection block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "Role": {
+      "type": "enumeration",
+      "enum": [
+        "writing",
+        "research",
+        "curation",
+        "creation",
+        "teaching"
+      ]
+    }
+  }
+}

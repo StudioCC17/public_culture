@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_spider_diagrams",
+  "info": {
+    "singularName": "homepage-spider-diagram",
+    "pluralName": "homepage-spider-diagrams",
+    "displayName": "Homepage spider diagram"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    }
+  }
+}

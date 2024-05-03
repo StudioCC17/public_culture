@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_connections_leads_tos",
+  "info": {
+    "displayName": "Leads to",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    }
+  }
+}

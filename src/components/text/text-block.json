@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_text_text_blocks",
+  "info": {
+    "displayName": "Text block"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "blocks"
+    }
+  }
+}
